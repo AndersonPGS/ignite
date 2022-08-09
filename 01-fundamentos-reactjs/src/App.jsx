@@ -3,8 +3,16 @@ import { Post } from "./Post"
 export function App() {
   return (
     <>
-      <h1>hello world</h1>
-      <Post />
+      <h1>Posts: </h1>
+      <Post
+        author="Anderson Paiva"
+        content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis repellendus amet eaque animi, labore deleniti sed provident enim tempore! Odio maxime deleniti libero explicabo animi voluptas, tempore hic blanditiis nemo."
+      />
+      <Post
+        author="Rocketseat"
+        content="Olá Anderson, você foi aceito e agora faz parte da Rocketseat ❤️."
+      />
     </>
   )
 }
+
