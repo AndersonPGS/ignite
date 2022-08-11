@@ -2,7 +2,7 @@ import styles from "./Post.module.css"
 
 export function Post() {
   return (
-    <article>
+    <article className={styles.post}>
       <header>
         <div className={styles.author}>
           <img className={styles.avatar} src="https://github.com/andersonpgs.png" />
@@ -11,8 +11,8 @@ export function Post() {
             <span>Front End Developer</span>
           </div>
 
-          <time title="11 de Agosto às 11:14" dateTime="2022-08-11 11:14:15">Publicado há 1h</time>
         </div>
+        <time title="11 de Agosto às 11:14" dateTime="2022-08-11 11:14:15">Publicado há 1h</time>
       </header>
 
       <div className={styles.content}>
