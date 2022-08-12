@@ -5,6 +5,43 @@ import { Sidebar } from "./components/Sidebar"
 import styles from "./App.module.css"
 import "./global.css"
 
+// Data
+// author: {avatarUrl: "", name: "", role: ""}
+// publishedAt: Date
+// content: String
+
+const posts = [
+  {
+    id: 1,
+    author: {
+      avatarUrl: "https://github.com/andersonpgs.png",
+      name: "Anderson Paiva",
+      role: "Front End Developer"
+    },
+    content: [
+      { type: "paragraph", content: "Olá seja bem vindo ao meu post" },
+      { type: "paragraph", content: "Me siga para saber mais informações e desenvolvimentos futuros" },
+      { type: "link", content: "github.com/andersonpgs" },
+      { type: "link", content: "#rocketseat" }
+    ],
+    publishedAt: new Date("2022-08-12 12:00:00")
+  },
+  {
+    id: 2,
+    author: {
+      avatarUrl: "https://github.com/diego3g.png",
+      name: "Diego Fernandes",
+      role: "CTO @Rocketseat"
+    },
+    content: [
+      { type: "paragraph", content: "Parabéns Anderson Paiva" },
+      { type: "paragraph", content: "Você foi selecionado para trabalhar junto conosco aqui na @Rocketseat" },
+      { type: "link", content: "github.com/andersonpgs" },
+      { type: "link", content: "#rocketseat" }
+    ],
+    publishedAt: new Date("2022-08-12 09:00:00")
+  },
+]
 
 export function App() {
   return (
@@ -14,14 +51,15 @@ export function App() {
       <div className={styles.wrapper}>
         <Sidebar/>
         <main>
-          <Post
-            author="Anderson Paiva"
-            content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis repellendus amet eaque animi, labore deleniti sed provident enim tempore! Odio maxime deleniti libero explicabo animi voluptas, tempore hic blanditiis nemo."
-          />
-          <Post
-            author="Rocketseat"
-            content="Olá Anderson, você foi aceito e agora faz parte da Rocketseat ❤️."
-          />
+          {posts.map(post => {
+            return (
+              <Post
+                author={post.author}
+                content={post.content}
+                publishedAt={post.publishedAt}
+              />
+            )
+          })}
         </main>
       </div>
     </>
