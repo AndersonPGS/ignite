@@ -36,7 +36,7 @@ const posts = [
     content: [
       { type: "paragraph", content: "Parabéns Anderson Paiva" },
       { type: "paragraph", content: "Você foi selecionado para trabalhar junto conosco aqui na @Rocketseat" },
-      { type: "link", content: "github.com/andersonpgs" },
+      { type: "link", content: "app.rocketseat.com.br" },
       { type: "link", content: "#rocketseat" }
     ],
     publishedAt: new Date("2022-08-12 09:00:00")
