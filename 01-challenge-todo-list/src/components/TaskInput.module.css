@@ -1,0 +1,35 @@
+.taskinput {
+  margin-top: -3.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.taskinput input {
+  width: 50%;
+  background: var(--gray-500);
+  color: var(--gray-300);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-right: 8px;
+  line-height: 1.4;
+  border: 1px solid var(--gray-700);
+}
+
+.taskinput button {
+  border: none;
+  background: var(--primary-dark);
+  color: var(--gray-100);
+  padding: 1rem;
+  border-radius: 8px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+}
+
+.taskinput button span {
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+}
