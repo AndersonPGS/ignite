@@ -1,0 +1,32 @@
+.tasks {
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.info {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+}
+
+.info .created {
+  color: var(--primary);
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.info .done {
+  color: var(--secondary);
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.info span {
+  background: var(--gray-400);
+  color: var(--gray-200);
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border-radius: 999px;
+}
