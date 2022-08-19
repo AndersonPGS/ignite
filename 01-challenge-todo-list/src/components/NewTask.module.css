@@ -1,12 +1,13 @@
 .newtask {
   margin-top: -3.8rem;
+  width: 75%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .newtask input {
-  width: 50%;
+  width: 100%;
   background: var(--gray-500);
   color: var(--gray-300);
   padding: 1rem;

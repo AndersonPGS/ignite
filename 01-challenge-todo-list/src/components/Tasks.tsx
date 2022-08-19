@@ -1,4 +1,5 @@
-import styles from "./Tasks.module.css"
+import { Task } from "./Task";
+import styles from "./Tasks.module.css";
 
 export function Tasks() {
   return (
@@ -11,6 +12,10 @@ export function Tasks() {
           Concluídas <span>2 de 5</span>
         </div>
       </div>
+
+      <Task />
+      <Task />
+      <Task />
     </div>
-  )
+  );
 }
