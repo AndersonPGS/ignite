@@ -4,6 +4,7 @@ import { Task } from "./Task";
 import styles from "./Tasks.module.css";
 
 import { v4 as uuidv4 } from "uuid";
+import { EmptyTask } from "./EmptyTask";
 
 export function Tasks() {
   const [tasks, setTasks] = useState([
@@ -91,18 +92,22 @@ export function Tasks() {
           </div>
         </div>
 
-        {tasks.map((task) => {
-          return (
-            <Task
-              key={task.id}
-              id={task.id}
-              content={task.content}
-              isDone={task.isDone}
-              onDeleteTask={deleteTask}
-              onCheckTask={checkDoneTask}
-            />
-          );
-        })}
+        {allTasks > 0 ? (
+          tasks.map((task) => {
+            return (
+              <Task
+                key={task.id}
+                id={task.id}
+                content={task.content}
+                isDone={task.isDone}
+                onDeleteTask={deleteTask}
+                onCheckTask={checkDoneTask}
+              />
+            );
+          })
+        ) : (
+          <EmptyTask />
+        )}
       </div>
     </>
   );
