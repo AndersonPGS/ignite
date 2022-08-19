@@ -24,7 +24,6 @@ export function NewTask({ onAddNewTask }: NewTaskProps) {
 
     onAddNewTask(newTaskText);
     setNewTaskText("");
-    console.log(newTaskText);
   }
 
   return (
