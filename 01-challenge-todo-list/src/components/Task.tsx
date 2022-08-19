@@ -16,7 +16,7 @@ export function Task({ content, isDone, id, onDeleteTask }: TaskProps) {
   return (
     <div className={styles.task}>
       <input type="checkbox" checked={isDone} />
-      <p>{content}</p>
+      <p className={isDone ? styles.taskDone : ""}>{content}</p>
       <button onClick={handleDeleteTask}>
         <Trash size={16} />
       </button>
