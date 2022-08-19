@@ -37,6 +37,11 @@
   align-items: center;
 }
 
-.newtask button:hover {
+.newtask button:not(:disabled):hover {
   background: var(--primary);
+}
+
+.newtask button:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
 }
