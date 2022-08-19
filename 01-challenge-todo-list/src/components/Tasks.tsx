@@ -64,6 +64,17 @@ export function Tasks() {
     setTasks([...tasks, newtask]);
   }
 
+  function checkDoneTask(taskToCheckDone: string) {
+    const newTasksArr = tasks.map((item) => {
+      if (item.id === taskToCheckDone) {
+        return { id: item.id, content: item.content, isDone: !item.isDone };
+      } else {
+        return item;
+      }
+    });
+    setTasks(newTasksArr);
+  }
+
   return (
     <>
       <NewTask onAddNewTask={addTask} />
@@ -88,6 +99,7 @@ export function Tasks() {
               content={task.content}
               isDone={task.isDone}
               onDeleteTask={deleteTask}
+              onCheckTask={checkDoneTask}
             />
           );
         })}
