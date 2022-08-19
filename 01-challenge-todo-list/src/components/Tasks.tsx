@@ -59,12 +59,17 @@ export function Tasks() {
           <div className={styles.created}>
             Tarefas criadas <span>{allTasks}</span>
           </div>
-          <div className={styles.done}>
-            Concluídas{" "}
-            <span>
-              {doneTasks} de {allTasks}
-            </span>
-          </div>
+
+          {allTasks > 0 ? (
+            <div className={styles.done}>
+              Concluídas{" "}
+              <span>
+                {doneTasks} de {allTasks}
+              </span>
+            </div>
+          ) : (
+            ""
+          )}
         </div>
 
         {allTasks > 0 ? (
