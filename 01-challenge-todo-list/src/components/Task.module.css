@@ -67,6 +67,7 @@
 
 .task p {
   margin: 0 12px;
+  width: 100%;
 }
 
 .task button {
