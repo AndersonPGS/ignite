@@ -11,32 +11,7 @@ export function Tasks() {
     {
       id: uuidv4(),
       content:
-        "Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.",
-      isDone: true,
-    },
-    {
-      id: uuidv4(),
-      content: "Terminar o ToDo e partir para o proximo nível",
-      isDone: false,
-    },
-    {
-      id: uuidv4(),
-      content: "Fazer o almoço para não morrer de fome",
-      isDone: true,
-    },
-    {
-      id: uuidv4(),
-      content: "Alimentar o cachorro",
-      isDone: true,
-    },
-    {
-      id: uuidv4(),
-      content: "Estudar NodeJS",
-      isDone: false,
-    },
-    {
-      id: uuidv4(),
-      content: "Estudar Python",
+        "Conseguir uma vaga para trabalhar com desenvolvimento Front End na @Rocketseat ❤️",
       isDone: false,
     },
   ]);
