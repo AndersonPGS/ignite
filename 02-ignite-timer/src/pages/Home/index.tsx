@@ -77,6 +77,7 @@ export function Home() {
   }
 
   function handleInterruptCycle() {
+    document.title = "Ignite Timer"
     setCycles(cycles.map(cycle => {
       if (cycle.id === activeCycleId) {
         return { ...cycle, interruptedDate: new Date() }
